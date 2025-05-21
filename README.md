@@ -53,7 +53,14 @@ pip install -r requirements.txt
 **Dependencies utama:**
 
 - numpy
+- pandas
+- scikit-learn
+- matplotlib
+- seaborn
+- xgboost
+- joblib
 - streamlit
+- Pillow
 
 ---
 
