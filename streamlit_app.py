@@ -104,7 +104,7 @@ if st.button("Prediksi Sekarang"):
     st.markdown(
         f"""
         <div style="background-color:#f0f2f6; padding: 1.5em; border-radius: 12px; border: 1px solid #ddd; width: 100%; text-align: center; color: #333;">
-            Prediksi Status Gizi: <br><b style="font-weight: bold; font-size: 1.5em;">{result}</b>
+            Prediksi Status: <br><b style="font-weight: bold; font-size: 1.5em;">{result}</b>
         </div>
         """,
         unsafe_allow_html=True
