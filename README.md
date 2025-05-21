@@ -8,7 +8,7 @@ Aplikasi deteksi stunting (status gizi balita) berbasis AI menggunakan metode ba
 
 Proyek ini bertujuan untuk membantu tenaga kesehatan, peneliti, dan masyarakat dalam melakukan prediksi status gizi balita menggunakan kecerdasan buatan. Model yang digunakan adalah neural network dengan algoritma backpropagation. Prediksi dilakukan berdasarkan umur (bulan), jenis kelamin, dan tinggi badan balita.
 
-Aplikasi ini berjalan secara interaktif menggunakan Streamlit, sehingga mudah digunakan langsung di web lokal.
+Aplikasi ini berjalan secara interaktif menggunakan Streamlit, sehingga mudah digunakan langsung di [web](https://stunting-detection-backpropagationgit.streamlit.app/) lokal.
 
 ---
 
