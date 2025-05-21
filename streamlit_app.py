@@ -97,11 +97,18 @@ with col3:
     tinggi_badan = st.number_input("Tinggi Badan (cm)", min_value=0.0, max_value=127.9, step=0.1, format="%.1f")
 
 # Tombol prediksi
-col_button, _ = st.columns([1, 2])
-with col_button:
-    if st.button("Prediksi Sekarang"):
-        result = predict_interactive(W1, b1, W2, b2, W3, b3, status_gizi_classes, max_umur, max_tinggi, umur, jenis_kelamin, tinggi_badan)
-        st.success(f"**Prediksi Status Gizi: {result}**")
+
+if st.button("Prediksi Sekarang"):
+    result = predict_interactive(W1, b1, W2, b2, W3, b3, status_gizi_classes, max_umur, max_tinggi, umur, jenis_kelamin, tinggi_badan)
+    # Simulasi card dengan HTML & CSS
+    st.markdown(
+        f"""
+        <div style="background-color:#f0f2f6; padding: 1.5em; border-radius: 12px; border: 1px solid #ddd; width: 100%; text-align: center; color: #333;">
+            Prediksi Status Gizi: <br><b style="font-weight: bold; font-size: 1.5em;">{result}</b>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
 
 # Footer
 st.markdown("---")
