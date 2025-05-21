@@ -29,6 +29,10 @@ https://www.kaggle.com/datasets/rendiputra/stunting-balita-detection-121k-rows
 
 ---
 
+![alt text](image-1.png)
+
+---
+
 ## Instalasi
 
 ### 1. Clone repositori
@@ -121,21 +125,7 @@ def predict_interactive(W1, b1, W2, b2, W3, b3, status_gizi_classes, max_umur, m
     return predicted_class
 ```
 
-### 3. **(Tidak tersedia di repo)**: Error Calculation, Backward Pass, Update Weights
-
-> **Catatan:** Bagian perhitungan error (loss), backward pass (propagasi balik error), dan update bobot (update weights) adalah bagian training dan belum tersedia di repo ini. Biasanya proses itu ada dalam kode training dan hanya dijalankan saat pelatihan model, bukan saat prediksi.
-
----
-
-**Penjelasan singkat:**
-
-- `forward_pass` melakukan propagasi input ke output melalui 3 lapisan (hidden dan output) menggunakan aktivasi `tanh` dan softmax.
-- Fungsi prediksi menggunakan hasil output softmax untuk menentukan kelas status gizi.
-- Bobot (`W1, W2, W3`) dan bias (`b1, b2, b3`) sudah dilatih sebelumnya dan hanya digunakan untuk prediksi.
-
----
-
-## Contoh Pseudocode Training Backpropagation (Backward Pass + Update Weights)
+## 3. Contoh Pseudocode Training Backpropagation (Backward Pass + Update Weights)
 
 Berikut adalah contoh generik training dengan algoritma backpropagation pada Multilayer Perceptron (MLP). Contoh ini menunjukkan langkah-langkah utama: forward pass, error calculation, backward pass, dan update weights.
 
@@ -189,7 +179,7 @@ for epoch in range(num_epochs):
 
 ---
 
----
+## ![alt text](image.png)
 
 ## Kontribusi
 
@@ -211,4 +201,13 @@ Kontribusi sangat terbuka! Silakan lakukan fork, buat branch baru, dan ajukan pu
 
 ---
 
-**Dibuat oleh [riyanfazrirahman-kampus](https://github.com/riyanfazrirahman-kampus)**
+# Anggota Kelompok
+
+| Status   | Name                | NIM           | University          | Media                                                                       | GitHub                                        |
+| -------- | ------------------- | ------------- | ------------------- | --------------------------------------------------------------------------- | --------------------------------------------- |
+| `Active` | Riyan Fazri Rahman  | `C2255201005` | STMIK Palangka Raya | [LinkedIn](https://www.linkedin.com/in/riyan-fazri-rahman/)                 | [GitHub](https://github.com/riyanfazrirahman) |
+| `Active` | Alif Rahmatullah L. | `C2255201029` | STMIK Palangka Raya | [LinkedIn](https://www.linkedin.com/in/alif-rahmatullah-lesmana-565028311/) | [GitHub](https://github.com/Peparrepair)      |
+| `Active` | Rif'ad Amin Jayadi  | `C2255201018` | STMIK Palangka Raya | -                                                                           | [GitHub](https://github.com/)                 |
+| `Active` | Oga Luisca MIka S.  | `C2255201016` | STMIK Palangka Raya | -                                                                           | [GitHub](https://github.com/)                 |
+
+---
