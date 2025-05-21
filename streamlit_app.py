@@ -113,3 +113,4 @@ if st.button("Prediksi Sekarang"):
 # Footer
 st.markdown("---")
 st.write("**Catatan Penting:** Pastikan data yang dimasukkan sesuai dengan rentang yang ditentukan.")
+
