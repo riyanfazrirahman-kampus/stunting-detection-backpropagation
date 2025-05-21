@@ -58,11 +58,11 @@ except Exception as e:
     st.stop()
 
 # Konfigurasi halaman
-st.set_page_config(page_title="Prediksi Status Gizi Balita", layout="wide", initial_sidebar_state="expanded")
+st.set_page_config(page_title="Stunting Detection with Backpropagation", layout="wide", initial_sidebar_state="expanded")
 
 # Header
-st.markdown("# Prediksi Status Gizi Balita")
-st.markdown("Aplikasi untuk memprediksi status gizi balita dengan mudah!")
+st.markdown("# Prediksi Stunting pada Balita")
+st.markdown("Aplikasi untuk memprediksi Stunting pada Balita dengan mudah!")
 
 # Gambar utama dengan cropping tinggi
 try:
@@ -75,14 +75,14 @@ try:
     bottom = top + crop_height
 
     cropped_image = image.crop((0, top, width, bottom))
-    st.image(cropped_image, caption="Prediksi Status Gizi Balita", use_container_width=True)
+    st.image(cropped_image, caption="Prediksi Status Stunting pada Balita", use_container_width=True)
 except Exception as e:
     st.error(f"Gagal menampilkan gambar: {e}")
 
 # Sidebar info
 with st.sidebar:
     st.header("Tentang Aplikasi")
-    st.write("Aplikasi ini memakai model AI dengan metode backpropagation untuk memprediksi status gizi balita dari data umur, jenis kelamin, dan tinggi badan.")
+    st.write("Aplikasi ini memakai model AI dengan metode backpropagation untuk memprediksi status stunting pada balita dari data umur, jenis kelamin, dan tinggi badan.")
     st.write("**Rentang Data:**")
     st.write("- Umur: 0-60 bulan")
     st.write("- Tinggi Badan: 0-127.9 cm")
